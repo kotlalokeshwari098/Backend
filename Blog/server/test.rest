@@ -1,0 +1,29 @@
+###DATA ENDPOINT FOR ADDING A USER
+POST http://localhost:5656/add-post
+Content-Type: application/json
+
+{
+    "id":4,
+    "name":"loki"
+}
+###DATA ENDPOINT FOR READING USER DATA WITH THE ID
+GET http://localhost:5656/view-post/1
+
+
+###DATA ENDPOINT FOR GETTING DATA ARRAY
+GET http://localhost:5656/
+
+###DATA ENDPOINT FOR UPDATING USER DATA WITH ID
+PUT http://localhost:5656/update-post/1
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"loki"
+}
+
+
+###DATA ENDPOINT FOR DELETING A USER
+DELETE http://localhost:5656/delete/1
+Content-Type: application/json
+
