@@ -1,0 +1,15 @@
+###fetch data by id
+GET http://localhost:5656/fetchs/1
+
+
+###update age
+PUT http://localhost:5656/update/1
+Content-Type: application/json
+
+{
+    "age":89
+}
+
+###delete the age using id
+DELETE http://localhost:5656/delete/2
+
