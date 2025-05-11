@@ -1,0 +1,19 @@
+{
+  "name": "fullstacktodo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "if-env TYPE=server && (cd server && npm install)||(cd client && npm install)",
+    "server": "node --watch server/index.js",
+    "client":"cd client && npm start"
+
+  },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
